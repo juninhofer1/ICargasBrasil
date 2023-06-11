@@ -10,4 +10,25 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    
+    @IBOutlet weak var labelRegister: UILabel!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addEventLabel()
+     
+    }
+
+    func addEventLabel() {
+         self.labelRegister.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.openRecoverPassword)))
+        labelRegister.isUserInteractionEnabled = true
+    }
+    
+    @objc func openRecoverPassword() {
+        let vc = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }
