@@ -20,6 +20,9 @@
 		5F61F41E2A2A987E00A20023 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F61F41D2A2A987E00A20023 /* LoginViewController.swift */; };
 		5F61F4212A2A98A100A20023 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F61F4202A2A98A100A20023 /* LoginViewController.xib */; };
 		5F7328A02A2EC55200287D64 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F73289F2A2EC55200287D64 /* NSViewExtensions.swift */; };
+		A020AEE52A42537000D7534B /* TypeUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020AEE32A42537000D7534B /* TypeUserViewController.swift */; };
+		A020AEE62A42537000D7534B /* TypeUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A020AEE42A42537000D7534B /* TypeUserViewController.xib */; };
+		A03F04582A42609500C12AB3 /* UserRegisterTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03F04572A42609500C12AB3 /* UserRegisterTypeEnum.swift */; };
 		A0DC46852A328172007F93AD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DC46832A328172007F93AD /* RegisterViewController.swift */; };
 		A0DC46862A328172007F93AD /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0DC46842A328172007F93AD /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
@@ -59,6 +62,9 @@
 		5F61F41D2A2A987E00A20023 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5F61F4202A2A98A100A20023 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5F73289F2A2EC55200287D64 /* NSViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSViewExtensions.swift; sourceTree = "<group>"; };
+		A020AEE32A42537000D7534B /* TypeUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeUserViewController.swift; sourceTree = "<group>"; };
+		A020AEE42A42537000D7534B /* TypeUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeUserViewController.xib; sourceTree = "<group>"; };
+		A03F04572A42609500C12AB3 /* UserRegisterTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterTypeEnum.swift; sourceTree = "<group>"; };
 		A0DC46832A328172007F93AD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A0DC46842A328172007F93AD /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +117,7 @@
 		5F61F3E42A2A980400A20023 /* ICargasBrasil */ = {
 			isa = PBXGroup;
 			children = (
+				A03F04552A42605600C12AB3 /* business */,
 				5F73289E2A2EC4F000287D64 /* util */,
 				5F61F4182A2A981B00A20023 /* ui */,
 				5F61F3E52A2A980400A20023 /* AppDelegate.swift */,
@@ -145,6 +152,7 @@
 		5F61F4182A2A981B00A20023 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				A020AEE22A42534300D7534B /* typeuser */,
 				A0DC46822A32811F007F93AD /* register */,
 				5F61F41C2A2A986C00A20023 /* login */,
 			);
@@ -166,6 +174,31 @@
 				5F73289F2A2EC55200287D64 /* NSViewExtensions.swift */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		A020AEE22A42534300D7534B /* typeuser */ = {
+			isa = PBXGroup;
+			children = (
+				A020AEE32A42537000D7534B /* TypeUserViewController.swift */,
+				A020AEE42A42537000D7534B /* TypeUserViewController.xib */,
+			);
+			path = typeuser;
+			sourceTree = "<group>";
+		};
+		A03F04552A42605600C12AB3 /* business */ = {
+			isa = PBXGroup;
+			children = (
+				A03F04562A42607500C12AB3 /* props */,
+			);
+			path = business;
+			sourceTree = "<group>";
+		};
+		A03F04562A42607500C12AB3 /* props */ = {
+			isa = PBXGroup;
+			children = (
+				A03F04572A42609500C12AB3 /* UserRegisterTypeEnum.swift */,
+			);
+			path = props;
 			sourceTree = "<group>";
 		};
 		A0DC46822A32811F007F93AD /* register */ = {
@@ -284,6 +317,7 @@
 				5F61F4212A2A98A100A20023 /* LoginViewController.xib in Resources */,
 				A0DC46862A328172007F93AD /* RegisterViewController.xib in Resources */,
 				5F61F3F52A2A980600A20023 /* LaunchScreen.storyboard in Resources */,
+				A020AEE62A42537000D7534B /* TypeUserViewController.xib in Resources */,
 				5F61F3F22A2A980600A20023 /* Assets.xcassets in Resources */,
 				5F61F3ED2A2A980400A20023 /* Main.storyboard in Resources */,
 			);
@@ -310,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03F04582A42609500C12AB3 /* UserRegisterTypeEnum.swift in Sources */,
 				5F61F3EA2A2A980400A20023 /* ViewController.swift in Sources */,
 				5F7328A02A2EC55200287D64 /* NSViewExtensions.swift in Sources */,
 				A0DC46852A328172007F93AD /* RegisterViewController.swift in Sources */,
@@ -317,6 +352,7 @@
 				5F61F3E62A2A980400A20023 /* AppDelegate.swift in Sources */,
 				5F61F41E2A2A987E00A20023 /* LoginViewController.swift in Sources */,
 				5F61F3E82A2A980400A20023 /* SceneDelegate.swift in Sources */,
+				A020AEE52A42537000D7534B /* TypeUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

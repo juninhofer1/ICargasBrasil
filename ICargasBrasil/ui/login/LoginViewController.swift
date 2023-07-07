@@ -26,8 +26,13 @@ class LoginViewController: UIViewController {
     }
     
     @objc func openRecoverPassword() {
-        let vc = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
+      //  TypeUserViewController
+        let vc = RegisterViewController(nibName: "TypeUserViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
+        
+//
+//        let vc = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
