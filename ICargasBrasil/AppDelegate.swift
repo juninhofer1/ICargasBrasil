@@ -14,10 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        self.addCustomKeyPad()
         // Override point for customization after application launch.
         return true
     }
     
+    private func addCustomKeyPad() {
+        let accessoryView = KeyboardAccessoryToolbar()
+        UITextField.appearance().inputAccessoryView = accessoryView
+        UITextView.appearance().inputAccessoryView = accessoryView
+    }
 }
 
 
